@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maroma Resort — Investment Framework</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600;700&display=swap');
+:root{
+  --ink:#141210;--warm:#2c2418;--sand:#f4efe6;--gold:#b8956a;--gl:#d4b896;
+  --sea:#17605f;--sl:#e6efee;--wh:#fff;--g50:#f8f7f4;--g100:#edeae3;
+  --g200:#ddd8cf;--g400:#9e9588;--g600:#686055;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Manrope',sans-serif;color:var(--ink);background:var(--wh);-webkit-font-smoothing:antialiased}
+.hero-sm{position:relative;background:var(--ink);padding:72px;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end}
+.hero-sm .badge{position:absolute;top:32px;right:52px}
+.hero-sm h1{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:300;letter-spacing:5px;text-transform:uppercase;color:#fff;line-height:1}
+.hero-sm .sub{font-size:13px;letter-spacing:7px;text-transform:uppercase;color:var(--gl);margin-top:12px;font-weight:500}
+.hero-sm .tag-line{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:300;font-style:italic;color:rgba(255,255,255,0.7);margin-top:18px;max-width:640px;line-height:1.6}
+.badge{font-size:8px;letter-spacing:4px;text-transform:uppercase;color:var(--gl);border:1px solid rgba(212,184,150,0.3);padding:5px 16px}
+.kpi-bar{display:grid;grid-template-columns:repeat(6,1fr);background:var(--sand)}
+.kpi{padding:22px 10px;text-align:center;border-right:1px solid var(--g200)}
+.kpi:last-child{border-right:none}
+.kv{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;color:var(--warm);line-height:1}
+.kl{font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--g600);margin-top:5px;font-weight:600}
+.s{padding:52px 72px}
+.sa{background:var(--g50)}
+.sd{background:var(--warm);color:var(--wh)}
+.sk{background:var(--ink);color:var(--wh)}
+.lb{font-size:10px;letter-spacing:4.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.lb::before{content:'';width:18px;height:1px;background:var(--gold)}
+.sd .lb,.sk .lb{color:var(--gl)}
+h2{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:400;color:var(--warm);margin-bottom:14px;line-height:1.25}
+.sd h2,.sk h2{color:#fff}
+p{font-size:15px;line-height:1.8;color:var(--g600);margin-bottom:12px}
+.sd p,.sk p{color:rgba(255,255,255,0.6)}
+strong{color:var(--warm);font-weight:600}
+.sd strong,.sk strong{color:var(--gl)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.mkt{background:var(--ink);padding:16px 20px;display:grid;gap:8px;margin:16px 0;border-radius:3px}
+.sd .mkt{background:rgba(0,0,0,0.3)}
+.sk .mkt{background:rgba(255,255,255,0.04)}
+.mkt-i{text-align:center;padding:10px 4px}
+.mkt-v{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;color:var(--gl);line-height:1}
+.mkt-l{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.38);margin-top:5px;font-weight:500;line-height:1.35}
+.note{font-size:11px;font-style:italic;color:var(--g400)}
+.sd .note,.sk .note{color:rgba(255,255,255,0.25)}
+.phases{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}
+.phase{padding:20px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06)}
+.phase.active{border-color:var(--gold);background:rgba(184,149,106,0.04)}
+.phase-num{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gl);font-weight:700;margin-bottom:8px}
+.phase h4{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;color:#fff;margin-bottom:4px}
+.phase p{font-size:12px;color:rgba(255,255,255,0.4);margin:0;line-height:1.5}
+.phase .phase-keys{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--gl);margin-top:10px;line-height:1}
+.phase .phase-keys-l{font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-top:3px;font-weight:500}
+.ft{background:var(--ink);padding:24px 72px;display:flex;justify-content:space-between;align-items:center;font-size:9px;letter-spacing:1.5px;color:var(--g400);line-height:1.9}
+@media(max-width:900px){
+  .hero-sm{padding:40px}.s{padding:40px}
+  .kpi-bar{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:1fr}
+  .phases{grid-template-columns:1fr 1fr}
+  .ft{padding:24px 40px;flex-direction:column;gap:8px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<div class="hero-sm">
+  <div class="badge">Strictly Confidential</div>
+  <h1>Investment Framework</h1>
+  <div class="sub">Maroma Resort · Playa Maroma · Riviera Maya</div>
+  <div class="tag-line">Hybrid hospitality and branded residential platform — 1,140&nbsp;entitled keys, four phases, 10–12&nbsp;year horizon.</div>
+</div>
+
+<div class="kpi-bar">
+  <div class="kpi"><div class="kv">1,140</div><div class="kl">Authorized Keys</div></div>
+  <div class="kpi"><div class="kv">4</div><div class="kl">Phases</div></div>
+  <div class="kpi"><div class="kv">10–12 yr</div><div class="kl">Horizon</div></div>
+  <div class="kpi"><div class="kv">$50–65M</div><div class="kl">Equity Per Phase</div></div>
+  <div class="kpi"><div class="kv">&gt;2×</div><div class="kl">MOIC</div></div>
+  <div class="kpi"><div class="kv">~15%</div><div class="kl">Project-Level IRR</div></div>
+</div>
+
+<!-- THESIS -->
+<div class="s">
+  <div class="lb">Investment Thesis</div>
+  <h2>Hybrid Platform — Hotel and Branded Residences</h2>
+  <div class="g2">
+    <div>
+      <p>The hotel provides brand credential, service infrastructure, and terminal value. The residences provide early capital recovery, pricing premium, and scale. <strong>Residential pre-sales fund the construction</strong> — within a ~3-year cycle per phase.</p>
+      <p>This is a proven format in the corridor. Mayakoba demonstrated over two decades that a phased, multi-brand beachfront platform compounds with each phase. Banyan Tree, Rosewood, and Fairmont coexist on a single master-planned site with a similar conservation model 15&nbsp;km north.</p>
+    </div>
+    <div>
+      <p>A committed ultra-luxury brand enables residence pricing at <strong>$2–5M per unit</strong> ($8–12K per sellable m²), representing a ~40% premium over unbranded product — validated by comparable programs in the same corridor. Brand partner selection is in advanced discussions with several international hotel and lifestyle groups.</p>
+      <p>The ratio between hotel keys and residential units is determined with the partner. The site's entitlement and phased structure accommodate configurations from hotel-weighted to residential-weighted.</p>
+    </div>
+  </div>
+  <p class="note">Site details, entitlements, and operator track record: <a href="brochure.html" style="color:var(--gold)">Brochure</a>&ensp;·&ensp;<a href="datos-predio.html" style="color:var(--gold)">Site Data</a>&ensp;·&ensp;<a href="history.html" style="color:var(--gold)">History</a></p>
+</div>
+
+<!-- FINANCIAL PARAMETERS -->
+<div class="s sd">
+  <div class="lb">Financial Parameters</div>
+  <h2>Capital Structure and Return Profile</h2>
+  <div class="g2">
+    <div>
+      <p>Total equity: <strong>$200–250M</strong>, deployed across four phases over 10–12 years. Project-level debt (~35% LTC) and residential pre-sales complete the capital stack.</p>
+      <p>Gross residential revenue potential exceeds <strong>$1B</strong> — approximately <strong>300+ branded residences</strong> at an average price of <strong>$3–4M per unit</strong>, before commissions and brand fees. Hotel operating revenue and terminal value are additional.</p>
+      <p>Each phase targets a ~3-year development cycle with capital return at delivery.</p>
+    </div>
+    <div>
+      <p><strong>Value creation occurs in three layers:</strong> development surplus at delivery of each phase (the spread between residential revenue and construction cost); operating cash flow as the hotel stabilizes post-opening; and terminal value of the hotel asset plus remaining entitled land.</p>
+      <p>The site's fully authorized entitlement — SEMARNAT DTU-BR with current construction deadline through March 2029 (extendable), INAH archaeological clearance, and all environmental compensation paid — is the project's structural moat. Equivalent permits on comparable coastal land in Quintana Roo are no longer obtainable.</p>
+      <div class="mkt" style="grid-template-columns:repeat(3,1fr)">
+        <div class="mkt-i"><div class="mkt-v">&gt;2×</div><div class="mkt-l">MOIC<br>on Equity</div></div>
+        <div class="mkt-i"><div class="mkt-v">~15%</div><div class="mkt-l">Project-Level IRR<br>Base Case</div></div>
+        <div class="mkt-i"><div class="mkt-v">Yr 3</div><div class="mkt-l">First Capital<br>Return</div></div>
+      </div>
+      <p class="note">Base case at $3–4M average residence pricing. Sensitivity driven by brand positioning and rental pool participation. Detailed parametric models available upon request.</p>
+    </div>
+  </div>
+</div>
+
+<!-- DEVELOPMENT PROGRAM -->
+<div class="s sk">
+  <div class="lb">Development Program</div>
+  <h2>Four Phases, 10–12 Years</h2>
+  <p style="max-width:680px">Phase 1 establishes the brand and proves the hybrid concept. Subsequent phases adjust the product mix based on market absorption. Each phase can involve the same or different partners. 70% of the site remains in permanent conservation.</p>
+  <div class="phases">
+    <div class="phase active">
+      <div class="phase-num">Phase 1</div>
+      <h4>Foundation</h4>
+      <p>Hotel + residences. Brand established. ~3 years.</p>
+      <div class="phase-keys">~280</div>
+      <div class="phase-keys-l">Keys</div>
+    </div>
+    <div class="phase">
+      <div class="phase-num">Phase 2</div>
+      <h4>Expansion</h4>
+      <p>Additional keys. Second brand possible.</p>
+      <div class="phase-keys">~280</div>
+      <div class="phase-keys-l">Keys</div>
+    </div>
+    <div class="phase">
+      <div class="phase-num">Phase 3</div>
+      <h4>Community</h4>
+      <p>Beach club, wellness, residential.</p>
+      <div class="phase-keys">~280</div>
+      <div class="phase-keys-l">Keys</div>
+    </div>
+    <div class="phase">
+      <div class="phase-num">Phase 4</div>
+      <h4>Completion</h4>
+      <p>Full master plan buildout.</p>
+      <div class="phase-keys">~300</div>
+      <div class="phase-keys-l">Keys</div>
+    </div>
+  </div>
+  <p class="note">Phases 2–4 illustrative. Sizing and timing shaped by market absorption and partnership. Future-phase optionality structured at formation.</p>
+</div>
+
+<!-- NOTICE -->
+<div class="s" style="background:var(--g50);padding:36px 72px">
+  <p style="font-size:12px;color:var(--g400);line-height:1.8;max-width:700px;margin:0"><strong style="color:var(--g600)">Important Notice.</strong> Investment framework for confidential discussion. All figures are indicative approximations (±15–20%) and do not constitute projections, a feasibility study, or an investment recommendation. Subject to construction risk, market absorption, brand commitment, currency exposure, and environmental factors. Residence pricing requires a committed ultra-luxury brand. Detailed parametric models available upon request.</p>
+</div>
+
+<div class="ft">
+  <span>Maroma Resort — Investment Framework · April 2026</span>
+  <span>Strictly Confidential · For Qualified Investors Only</span>
+</div>
+
+</body>
+</html>
